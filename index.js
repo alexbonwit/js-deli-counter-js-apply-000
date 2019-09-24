@@ -1,8 +1,19 @@
 function takeANumber(line, name) {
-  var placeInLine = line.length + 1;
   line.push(name);
-  return 'Welcome, ' + name + '. You are number ' + placeInLine + ' in line.';
+  return 'Welcome, ' + name + '. You are number ' + line.length + ' in line.';
 }
+
+var lineNumber = 0;
+
+function takeANumber2() {
+  lineNumber++;
+  console.log( 'Welcome, your number is ' + lineNumber );
+}
+
+takeANumber2();
+takeANumber2();
+
+// welcome, your number is 
 
 function nowServing(line) {
   if (line.length === 0) {
